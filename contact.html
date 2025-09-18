@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omniiera Group - Contact</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo wee"><a href="header.html">OMNIIERA</a> <span class="span">GROUP</span></div>
+    <button class="menu-toggle">☰</button>
+    <nav class="nav-links">
+      <a href="index.html" >Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="founder.html">Founder</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="wrap contact-section">
+    <h1>Contact Us</h1>
+    <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta">Send</button>
+      <p id="formHint" style="display:none"></p>
+    </form>
+
+    <div class="direct-contact">
+      <p><strong>Email:</strong> <a href="mailto:omniieragroups@gmail.com">omniieragroups@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348181849374" target="_blank">+234 818 184 9374</a></p>
+      <p><strong>Location:</strong> Kano, Nigeria</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer reveal">
+    <div class="footer-content wrap">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="https://wa.me/2348181849374" target="_blank">WhatsApp</a></p>
+        <p><a href="mailto:omniieragroups@gmail.com">omniieragroups@gmail.com</a></p>
+        <p>Kano, Nigeria</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p><a href="https://instagram.com/ahmerd_a.s.d_" target="_blank">Instagram</a></p>
+        <p><a href="https://linkedin.com/in/ahmad-shaaibu" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/Ahmerd-asd" target="_blank">GitHub</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="about.html">About</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Omniiera Group. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
