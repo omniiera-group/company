@@ -111,21 +111,45 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
+/* --- Slider: robust responsive sizing --- */
 .slider {
-  width: 100%;
-  height: 100%;
+  width: 100vw;     /* always full screen width */
+  height: 100vh;    /* full screen height */
+  overflow: hidden;
+  position: relative;
 }
-
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  transition: transform 0.55s ease;
 }
-
 .slides img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  flex-shrink: 0;
   object-fit: cover;
 }
+
+/* navigation buttons */
+.btn {
+  z-index: 4;
+  border: none;
+  cursor: pointer;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev { left: 18px; }
+.next { right: 18px; }
+
+/* small touch improvements */
+.slider:active, .slider:hover { cursor: grabbing; }
+
+
 
 .btn {
   position: absolute;
@@ -207,6 +231,10 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
+}
+
+.addd{
+  margin-bottom: 10px;
 }
 
 .card {
